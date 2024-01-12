@@ -1,40 +1,46 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import MobileMenu from './MobileMenu'
+import {DownloadApps, HeaderData} from "@/utils/uiData";
+import LogoIcon from '../../../public/images/logo.png'
 const Header = () => {
     const [showMenu, setShowMenu] = React.useState(false)
    const showMenuHandler = () => {
         setShowMenu(!showMenu)
     }
     return(
-        <div className="w-full bg-white min-h-[86px]">
-            <div className={"w-full flex flex-row justify-between px-10 py-5"}>
-                <div className={"text-black"}>
-                    Image
+        <div className="w-full bg-white sticky top-0 min-h-20">
+            <div className={"w-full h-20 flex flex-row justify-between items-center px-10"}>
+                <div className={"flex items-center text-black font-jost"}>
+                    <Image src={LogoIcon} alt={"Logo"} className={"w-20 h-20"}/>
+                    <div className={"text-primary-color font-jost text-[24px] font-500"}>Alen</div>
                 </div>
-                <div>
-                    <div className={""}>
-                        
+                    <div className={"hidden text-black  lg:flex lg:flex-row lg:space-x-16"}>
+                        {
+                        HeaderData.map((header, i)=> {
+                            return(
+                                <Link href={header.path} className={"font-jost text-[17px]"} key={i}>{header.name}</Link>
+                            )
+                        })
+                        }
+
                     </div>
-                    <div className={"hidden text-black lg:flex lg:flex-row"}>
-                        <div>Content</div>
-                        <div>Content</div>
-                        <div>Content</div>
-                        <div>Content</div>
-                    </div>
-                    {/*<button onClick={showMenuHandler} className={"text-black lg:hidden"}>*/}
-                    {/*    Icon*/}
-                    {/*</button>*/}
+                <div className={"hidden text-black lg:flex lg:flex-row lg:space-x-10"}>
+                    {
+                   DownloadApps.map((apps, i) => {
+                       return (
+                           <Link href={apps.link} className={"font-jost text-[17px]"} key={i}>
+                               <Image src={apps.image} alt={"App Icons"} />
+                           </Link>
+                           )
+                   })}
+                </div>
                     <div className={"text-black lg:hidden"}>
                         <MobileMenu />
                         </div>
-                </div>
-                
             </div>
-            <Link href={"blog"}>
-                Blog
-                </Link>
         </div>
     )
 }

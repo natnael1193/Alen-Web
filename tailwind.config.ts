@@ -12,6 +12,16 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'logo': "./public/images/logo.png"
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat'],
+        'jost': ['Jost'],
+        'lato': ['Lato'],
+        'garamond': ['Garamond']
+      },
+      colors: {
+        'primary-color': '#D7272A',
       },
     },
   },
