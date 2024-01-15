@@ -4,14 +4,14 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+import {Divider} from "@mui/material";
+import {HeaderData, DownloadApps} from "@/utils/uiData";
+import Image from 'next/image'
+import Link from 'next/link'
 
 const drawerWidth = 240;
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
@@ -46,29 +46,24 @@ const MobileMenu = () => {
             onKeyDown={toggleDrawer(anchor, false)}
             >
             <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
+                {HeaderData.map((header, index) => (
+                    <ListItem key={index} disablePadding>
                         <ListItemButton>
-                            <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                            </ListItemIcon>
-                            <ListItemText primary={text} />
+                            <Link href={header.path} className={"font-jost text-[17px] w-full"} key={index}>{header.name}</Link>
                         </ListItemButton>
                     </ListItem>
                     ))}
             </List>
             <Divider />
             <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                            </ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItemButton>
-                    </ListItem>
-                    ))}
+                {
+                   DownloadApps.map((apps, i) => {
+                       return (
+                           <Link href={apps.link} className={"font-jost text-[17px]"} key={i}>
+                               <Image src={apps.image} alt={"App Icons"} className={" m-3"} />
+                           </Link>
+                           )
+                   })}
             </List>
         </Box>
         );

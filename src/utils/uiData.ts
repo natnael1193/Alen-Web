@@ -14,3 +14,5 @@ export const DownloadApps = [
         link: ""
     },
 ]
+
+export const serviceTags  = ['Electronics', 'Maintenance']
