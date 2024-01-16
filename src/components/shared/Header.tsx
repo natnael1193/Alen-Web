@@ -11,7 +11,11 @@ const Header = () => {
         setShowMenu(!showMenu)
     }
     return(
-        <div className="w-full bg-white sticky top-0 min-h-20">
+        <header className="w-full bg-white sticky top-0 min-h-20 z-90"
+            style={{
+            zIndex: 100
+        }}
+            >
             <div className={"w-full h-20 flex flex-row justify-between items-center px-10"}>
                 <div className={"flex items-center text-black font-jost"}>
                     <Image src={LogoIcon} alt={"Logo"} className={"w-20 h-20"}/>
@@ -41,7 +45,7 @@ const Header = () => {
                         <MobileMenu />
                         </div>
             </div>
-        </div>
+        </header>
     )
 }
 export default Header;
