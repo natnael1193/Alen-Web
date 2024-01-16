@@ -11,8 +11,9 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'service_bg': "url('https://cdn.pixabay.com/photo/2023/11/22/15/20/books-8405721_1280.jpg')"
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'service_bg': "url('https://cdn.pixabay.com/photo/2023/11/22/15/20/books-8405721_1280.jpg')",
+        'pattern_image': "url('/public/images/pattern.svg')"
       },
       fontFamily: {
         'montserrat': ['Montserrat'],
