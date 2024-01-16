@@ -9,7 +9,7 @@ const HappyClients = () => {
             </div>
             <div className="flex flex-col bg-white m-auto p-auto lg:mt-10">
             <div
-                className="flex overflow-x-scroll pb-10 no-scrollbar"
+                className="flex overflow-x-scroll no-scrollbar"
                 >
                 <div
                     className="flex flex-nowrap "

@@ -7,7 +7,7 @@ type props = {
 
 const GetAppButton = ({ name, url }: props) => {
     return(
-        <button className={"border-[1px] border-white p-3 text-2xl rounded-[156px] lg:text-5xl"}>
+        <button className={"border-[1px] border-white p-3 px-10 text-[20px] rounded-[156px]"}>
             <Link href={url}>
                 {name}
                 </Link>
