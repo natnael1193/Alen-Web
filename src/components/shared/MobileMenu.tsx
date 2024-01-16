@@ -12,6 +12,7 @@ import {Divider} from "@mui/material";
 import {HeaderData, DownloadApps} from "@/utils/uiData";
 import Image from 'next/image'
 import Link from 'next/link'
+import MenuIcon from '@mui/icons-material/Menu';
 
 const drawerWidth = 240;
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
@@ -72,7 +73,9 @@ const MobileMenu = () => {
         <div className={"lg:hidden"}>
             {(['right'] as const).map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                    <Button onClick={toggleDrawer(anchor, true)}>
+                        <MenuIcon style={{ color: 'black', width: '24px', height: '24px'}}  />
+                    </Button>
                     {
                     width < 1021 &&  <Drawer
 //                        variant={"temporary"}
