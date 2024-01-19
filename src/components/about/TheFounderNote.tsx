@@ -15,12 +15,12 @@ const TheFounderNote = () => {
                     <div className={"text-[36px] lg:text-[56px]"}>
                         The Founder Note
                     </div>
-                    <div>As the founder of alen PLC, I am proud to see how far we have come in such a short time. We are now the leading provider of nanny solutions in Ethiopia, and we have helped thousands of parents find qualified and experienced nannies for their children.
+                    <div className={"text-[20px]"}>As the founder of alen PLC, I am proud to see how far we have come in such a short time. We are now the leading provider of nanny solutions in Ethiopia, and we have helped thousands of parents find qualified and experienced nannies for their children.
                         </div>
-                    <div>
+                    <div className={"text-[20px]"}>
                         I started alen PLC because I saw a need for a better way to find nannies. I was frustrated with the traditional methods, such as word-of-mouth and online classifieds. It was difficult to find reliable information about nannies, and it was time-consuming to interview them.
                     </div>
-                    <div>
+                    <div className={"text-[20px]"}>
                         alen PLC solves these problems by providing a convenient and reliable way to find nannies. Parents can browse our database of nannies who have been vetted by our team. They can read reviews from other parents, and they can schedule interviews with nannies without having to leave their homes.</div>
                 </div>
             </div>

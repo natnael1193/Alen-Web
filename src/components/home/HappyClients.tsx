@@ -12,7 +12,7 @@ const HappyClients = () => {
                 className="flex overflow-x-scroll no-scrollbar"
                 >
                 <div
-                    className="flex flex-nowrap "
+                    className="flex flex-nowrap"
                     >
                         {
                         HappyClientsData.map((clients, index) => {

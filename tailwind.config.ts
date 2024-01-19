@@ -13,7 +13,8 @@ const config: Config = {
         'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'service_bg': "url('https://cdn.pixabay.com/photo/2023/11/22/15/20/books-8405721_1280.jpg')",
-        'pattern_image': "url('/public/images/pattern.svg')"
+        'pattern_image': "url('/public/images/pattern.svg')",
+        'white_pattern_image': "url('/images/white_pattern.svg')",
       },
       fontFamily: {
         'montserrat': ['Montserrat'],
