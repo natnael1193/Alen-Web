@@ -1,6 +1,4 @@
-import IconsImage  from '../../../public/images/icons.svg'
-import  EmployeeImage from '../../../public/images/employee.svg'
-import logo  from '../../../public/images/logo.png'
+
 const MeetTheTeam = () => {
     return(
         <div className="font-montserrat pb-10">
@@ -31,7 +29,6 @@ const MeetTheTeam = () => {
                         )
                     })
                     }
-
                     <div className="bg-gradient-to-l from-white to-transparent w-44 h-[330px] absolute right-0"></div>
                 </div>
                 </div>

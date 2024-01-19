@@ -7,7 +7,7 @@ const HappyClients = () => {
             <div className="font-montserrat text-[36px] lg:text-[56px]">
                 Voice of Our Happy Clients
             </div>
-            <div className="flex flex-col bg-white m-auto p-auto lg:mt-10">
+            <div className="flex flex-col bg-white m-auto p-auto pr-0 lg:mt-10">
             <div
                 className="flex overflow-x-scroll no-scrollbar"
                 >
@@ -34,7 +34,7 @@ const HappyClients = () => {
                         )
                         })
                         }
-                     
+                    <div className="w-20 h-[400px] bg-gradient-to-l from-white to-transparent lg:w-96 lg:h-[355px] absolute right-0"></div>
                 </div>
             </div>
             </div>

@@ -14,7 +14,7 @@ export default function Home() {
         <Service />
       </div>
     <DownloadApp />
-    <div className="p-5 pr-0 pb-0 lg:p-10">
+    <div className="p-5 pr-0 pb-0 lg:p-10 lg:pr-0">
       <Partners />
       <HappyClients />
     </div>
