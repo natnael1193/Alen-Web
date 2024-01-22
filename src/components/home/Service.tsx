@@ -13,11 +13,11 @@ const Service = () => {
       <div className="flex flex-row justify-between">
         <Title name="Popular services" />
         <div className="flex">
-          <div className="hidden lg:visible">
-            <TextButton name="Search For Services" />
+          <div className="invisible lg:visible">
+            <TextButton name="Search For Services" color={"#000"} />
           </div>
-          <div className="visible lg:hidden">
-            <IconButton.SearchIconButton />
+          <div className="visible lg:invisible">
+            <IconButton.SearchIconButton color={"#000"} />
           </div>
         </div>
       </div>

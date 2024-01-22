@@ -8,7 +8,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 const Footer = () => {
     return(
         <div className={"w-full h-full lg:h-[30rem] bg-black bg-contain bg-pattern_image"}
-            style={{ backgroundImage : `url("https://alenplc.com/images/Alen-Pattern-04.jpg")` }}
             >
             
             <div className="lg:flex lg:flex-row p-10 lg:p-20">

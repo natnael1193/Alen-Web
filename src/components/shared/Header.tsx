@@ -19,7 +19,7 @@ const Header = () => {
             <div className={"w-full h-20 flex flex-row justify-between items-center px-10"}>
                 <div className={"flex items-center text-black font-jost"}>
                     <Image src={LogoIcon} alt={"Logo"} className={"w-20 h-20"}/>
-                    <div className={"text-primary-color font-jost text-[24px] font-500"}>Alen</div>
+                    <div className={"text-primary-color font-montserrat text-[24px] font-500"}>Alen</div>
                 </div>
                     <div className={"hidden text-black  lg:flex lg:flex-row lg:space-x-16"}>
                         {

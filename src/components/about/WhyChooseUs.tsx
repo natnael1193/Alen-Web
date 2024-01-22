@@ -4,7 +4,6 @@ import GetAppButton from '../shared/GetAppButton';
 const WhyChooseUs = () => {
     return(
         <div className="w-full text-white font-montserrat p-10 mb-10 bg-cover bg-pattern_image bg-no-repeat lg:p-20 lg:flex lg:flex-row"
-            style={{ backgroundImage : `url("https://alenplc.com/images/Alen-Pattern-04.jpg")` }}
             >
             <div className="w-full lg:w-1/2">
                 <div className={"text-[26px] lg:text-[56px]"}>Why Choose us?</div>
