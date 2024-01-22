@@ -2,13 +2,12 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 
 type props = {
-  color: string;
+  name: string;
 };
 
-const SearchIconButton = ({color}: props) => {
-  console.log("color", color)
+const SearchIconButton = () => {
   return (
-    <button className={`flex justify-center items-center bg-[${color}] h-[58px] w-[58px] rounded-full`}>
+    <button className="flex justify-center items-center bg-black h-[58px] w-[58px] rounded-full">
       <SearchIcon
         style={{
           color: "white",
@@ -18,8 +17,20 @@ const SearchIconButton = ({color}: props) => {
   );
 };
 
+const SearchWhiteIconButton = () => {
+  return (
+    <button className="flex justify-center items-center bg-white border-[1px] border-black h-[58px] w-[58px] rounded-full">
+      <SearchIcon
+        style={{
+        color: "black",
+        }}
+      />
+    </button>
+    );
+};
+
 const IconButton = {
-  SearchIconButton,
+  SearchIconButton, SearchWhiteIconButton
 };
 
 export default IconButton;

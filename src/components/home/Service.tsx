@@ -14,10 +14,10 @@ const Service = () => {
         <Title name="Popular services" />
         <div className="flex">
           <div className="invisible lg:visible">
-            <TextButton name="Search For Services" color={"#000"} />
+            <TextButton name="Search For Services" />
           </div>
           <div className="visible lg:invisible">
-            <IconButton.SearchIconButton color={"#000"} />
+            <IconButton.SearchIconButton />
           </div>
         </div>
       </div>
