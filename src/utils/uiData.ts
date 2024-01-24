@@ -10,7 +10,7 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 export const HeaderData = [
-    {name: "Home", path: "/"}, {name: "About Us", path: "/about"}, {name: "Services", path: "/service"}, {name: "News", path: "/news"}, {name: "Contact Us", path: "/contact"}
+    {name: "Home", path: "/"}, {name: "About Us", path: "/about"}, {name: "Services", path: "/service"}, {name: "News", path: "/news"}
 ]
 
 export const DownloadApps = [

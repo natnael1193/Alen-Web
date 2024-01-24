@@ -16,7 +16,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const drawerWidth = 240;
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
-const MobileMenu = () => {
+const MobileMenu = ({ open, setOpen }) => {
     const { height, width } = useWindowDimensions();
     const [state, setState] = React.useState({
     top: false,
@@ -54,6 +54,9 @@ const MobileMenu = () => {
                         </ListItemButton>
                     </ListItem>
                     ))}
+                <ListItem>
+                    <button onClick={ () => setOpen(true)} className={"font-jost text-[17px]"}>Contact US</button>
+                </ListItem>
             </List>
             <Divider />
             <List>
