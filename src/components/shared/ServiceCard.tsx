@@ -1,9 +1,10 @@
 import { serviceTags } from '../../utils/uiData'
 import ServiceSlider from "@/components/home/ServiceSlider";
+import Link from 'next/link'
 
 const ServiceCard = () => {
     return(
-            <div className={"w-full mt-16 rounded-2xl rounded-t-none lg:w-[32%]"}>
+        <Link href={"/service/3"} className={"w-full mt-16 rounded-2xl rounded-t-none lg:w-[32%]"}>
                 <ServiceSlider />
                 <div className="border-[1px] border-t-0 rounded-lg -mt-4">
                     <div className="px-5 py-8">
@@ -26,7 +27,7 @@ const ServiceCard = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
     )
 }
 

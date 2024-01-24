@@ -16,6 +16,7 @@ const config: Config = {
         'pattern_image': "url('/images/pattern.svg')",
         'white_pattern_image': "url('/images/white_pattern.svg')",
         'white_pattern_big_image': "url('/images/white_pattern_big.svg')",
+        'service_detail_image': "url('/images/service_detail.svg')",
       },
       fontFamily: {
         'montserrat': ['Montserrat'],
